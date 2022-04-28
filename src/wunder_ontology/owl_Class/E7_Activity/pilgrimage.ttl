@@ -1,0 +1,17 @@
+miracle:Pilgrimage a owl:Class ;    
+    rdfs:label
+        "Pilgrimage"@en ,
+        "Wallfahrt"@de ;
+    rdfs:subClassOf miracle:Activity ;    
+    skos:definition
+        "Pilgrimage undertaken in thanksgiving for the miracle."@en ,
+        "Wallfahrt, die zum Dank für das Wunder unternommen wird."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Calling ;
+    owl:disjointWith miracle:Distress ;
+    owl:disjointWith miracle:Miracle ;
+    owl:disjointWith miracle:PresentationOfVotivOffering ;
+    owl:disjointWith miracle:Vision ;
+.

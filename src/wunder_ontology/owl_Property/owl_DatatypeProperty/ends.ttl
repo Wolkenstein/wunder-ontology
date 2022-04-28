@@ -1,0 +1,10 @@
+dhpluso:ends a owl:ObjectProperty ;
+    rdfs:domain miracle:Miracle ;
+    rdfs:range miracle:Distress ;
+    rdfs:label
+        "ends"@en ,
+        "beendet"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

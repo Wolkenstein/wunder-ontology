@@ -1,0 +1,13 @@
+miracle:Condition a owl:Class ;    
+    rdfs:label
+        "Condition"@en ,
+        "Bedingung"@de ;
+    rdfs:subClassOf ecrm:E33_Linguistic_Object ;    
+    skos:definition
+        "Condition to be fulfilled for a miracle to be performed."@en ,
+        "Zu erfüllende Bedingung für ein vollbrachtes Wunder."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+    owl:disjointWith miracle:Consideration ;
+.

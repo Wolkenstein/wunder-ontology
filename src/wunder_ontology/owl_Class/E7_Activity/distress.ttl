@@ -1,0 +1,17 @@
+miracle:Distress a owl:Class ;    
+    rdfs:label
+        "Distress"@en ,
+        "Notlage"@de ;
+    rdfs:subClassOf miracle:Activity ;    
+    skos:definition
+        "Distress from which is to be delivered by the miraculous intervention of God."@en ,
+        "Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Calling ;    
+    owl:disjointWith miracle:Miracle ;
+    owl:disjointWith miracle:Pilgrimage ;
+    owl:disjointWith miracle:PresentationOfVotivOffering ;
+    owl:disjointWith miracle:Vision ;
+.

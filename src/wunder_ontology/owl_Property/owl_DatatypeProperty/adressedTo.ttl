@@ -1,0 +1,10 @@
+dhpluso:adressedTo a owl:ObjectProperty ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Saint ;
+    rdfs:label
+        "addressed to"@en ,
+        "gerichtet an"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

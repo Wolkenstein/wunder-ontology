@@ -1,0 +1,17 @@
+miracle:Vision a owl:Class ;    
+    rdfs:label
+        "Vision"@en ,
+        "Vision"@de ;
+    rdfs:subClassOf ecrm:E7_Activity ;    
+    skos:definition
+        "Vision."@en ,
+        "Vision."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Calling ;
+    owl:disjointWith miracle:Distress ;    
+    owl:disjointWith miracle:Miracle ;
+    owl:disjointWith miracle:PresentationOfVotivOffering ;
+    owl:disjointWith miracle:Pilgrimage ;
+.

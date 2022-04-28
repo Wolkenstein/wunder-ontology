@@ -1,0 +1,16 @@
+miracle:Person a owl:Class ;    
+    rdfs:label
+        "Person"@en ,
+        "Person"@de ;
+    rdfs:subClassOf 
+        ecrm:E21_Person,
+        miracle:Actor ;    
+    skos:definition
+        "Person acting or mentioned in a miracle report."@en ,
+        "In einem Wunderbericht handelnde oder erwähnte Person."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Group ;
+    owl:disjointWith miracle:Saint ;
+.

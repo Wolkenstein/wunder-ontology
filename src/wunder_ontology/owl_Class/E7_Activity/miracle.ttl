@@ -1,0 +1,17 @@
+miracle:Miracle a owl:Class ;    
+    rdfs:label
+        "Miracle"@en ,
+        "Wunder"@de ;
+    rdfs:subClassOf miracle:Activity ;    
+    skos:definition
+        "A miracle event."@en ,
+        "Ein Wunder-Ereignis."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Calling ;
+    owl:disjointWith miracle:Distress ;    
+    owl:disjointWith miracle:Pilgrimage ;
+    owl:disjointWith miracle:PresentationOfVotivOffering ;
+    owl:disjointWith miracle:Vision ;
+.

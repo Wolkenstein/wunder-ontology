@@ -1,0 +1,12 @@
+miracle:Activity a owl:Class ;    
+    rdfs:label
+        "activity"@en ,
+        "Aktivität"@de ;
+    rdfs:subClassOf ecrm:E7_Activity ;    
+    skos:definition
+        "Action in the context of a miracle report."@en ,
+        "Handlung im Kontext eines Wunderberichtes."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+.

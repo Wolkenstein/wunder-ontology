@@ -1,0 +1,12 @@
+miracle:Place a owl:Class ;    
+    rdfs:label
+        "Place"@en ,
+        "Ort"@de ;
+    rdfs:subClassOf ecrm:E21_Person ;    
+    skos:definition
+        "Mentioned place in a miracle report."@en ,
+        "Genannter Ort in einem Wunderbericht."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+.

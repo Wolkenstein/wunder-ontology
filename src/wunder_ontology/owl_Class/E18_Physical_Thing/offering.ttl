@@ -1,0 +1,12 @@
+miracle:Offering a owl:Class ;    
+    rdfs:label
+        "Offering"@en ,
+        "Votivgabe"@de ;
+    rdfs:subClassOf ecrm:E18_Physical_Thing ;    
+    skos:definition
+        "Votive offering for a miracle performed."@en ,
+        "Votivgabe für ein vollbrachtes Wunder."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+.

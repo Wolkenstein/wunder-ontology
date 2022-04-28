@@ -1,0 +1,10 @@
+dhpluso:hasCondition a owl:ObjectProperty ;
+    rdfs:domain miracle:Vow ;
+    rdfs:range miracle:Condition ;
+    rdfs:label
+        "has condition"@en ,
+        "hat Bedingung"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

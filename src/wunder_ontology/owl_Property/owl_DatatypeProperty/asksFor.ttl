@@ -1,0 +1,10 @@
+dhpluso:asksFor a owl:ObjectProperty ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Miracle ;
+    rdfs:label
+        "asks for"@en ,
+        "bittet um"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

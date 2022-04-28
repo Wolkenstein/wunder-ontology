@@ -1,0 +1,10 @@
+dhpluso:offers a owl:ObjectProperty ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Vow ;
+    rdfs:label
+        "offers"@en ,
+        "bietet an"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

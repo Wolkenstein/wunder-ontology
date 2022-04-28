@@ -1,0 +1,10 @@
+dhpluso:fulfils a owl:ObjectProperty ;
+    rdfs:domain miracle:Pilgrimage ;
+    rdfs:range miracle:Condition ;
+    rdfs:label
+        "fulfils"@en ,
+        "erfüllt"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

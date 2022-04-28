@@ -1,0 +1,10 @@
+dhpluso:triggeredBy a owl:ObjectProperty ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Distress ;
+    rdfs:label
+        "triggered by"@en ,
+        "hat Auslöser"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

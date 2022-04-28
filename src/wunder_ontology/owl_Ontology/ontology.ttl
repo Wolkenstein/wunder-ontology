@@ -1,0 +1,17 @@
+miracle:ontology a owl:Ontology ;
+    rdfs:label
+        "Miracle Ontology"@en ,
+        "Wunder Ontologie"@de ;
+    rdfs:comment
+            "Die Wunder Ontologie bietet ein Beschreibungsmodell für Berichte in frühneuzeitlichen Wundersammlungen"@en ,
+            "The Miracle Ontology provides a descriptive model for accounts in early modern miracle collections"@de ;
+    owl:versionInfo "0.1"^^xsd:string, "2022-04-28"^^xsd:date ;
+    owl:ontologyIRI <https://miracle.plus.ac.at/ontology#> ;
+    owl:versionIRI <https://miracle.plus.ac.at/ontology/0-1#> ;
+    dc:rights <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dc:creator 
+        "Peter Hinkelmanns",
+        "Ingrid Matschinegg" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+.

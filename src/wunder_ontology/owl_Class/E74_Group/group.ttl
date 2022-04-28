@@ -1,0 +1,16 @@
+miracle:Group a owl:Class ;    
+    rdfs:label
+        "Person group"@en ,
+        "Personengruppe"@de ;
+    rdfs:subClassOf 
+        ecrm:E74_Group,
+        miracle:Actor ;    
+    skos:definition
+        "A group of persons."@en ,
+        "Eine Gruppe von Personen."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Person ;
+    owl:disjointWith miracle:Saint ;
+.

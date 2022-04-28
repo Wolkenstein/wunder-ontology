@@ -1,0 +1,13 @@
+miracle:Consideration a owl:Class ;    
+    rdfs:label
+        "Vow"@en ,
+        "Gelübde"@de ;
+    rdfs:subClassOf ecrm:E33_Linguistic_Object ;    
+    skos:definition
+        "Vow to be fulfilled for a miracle to be performed."@en ,
+        "Zu erfüllendes Gelübde für ein vollbrachtes Wunder."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+    owl:disjointWith miracle:Condition ;
+.

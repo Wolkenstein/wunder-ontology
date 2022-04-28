@@ -1,0 +1,10 @@
+dhpluso:originatesFrom a owl:ObjectProperty ;
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Place ;
+    rdfs:label
+        "originates from"@en ,
+        "stammt aus"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

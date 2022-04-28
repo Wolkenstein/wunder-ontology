@@ -1,0 +1,19 @@
+miracle:PresentationOfVotivOffering a owl:Class ;    
+    rdfs:label
+        "Übergabe der Votivgabe"@en ,
+        "Presentation of the votive offering"@de ;
+    rdfs:subClassOf 
+        miracle:Activity,
+        ecrm:E10_Transfer_of_Custody ;    
+    skos:definition
+        "Presentation of the votive offering as fulfilment of a condition of the vow."@en ,
+        "Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Calling ;
+    owl:disjointWith miracle:Distress ;
+    owl:disjointWith miracle:Miracle ;
+    owl:disjointWith miracle:Pilgrimage ;
+    owl:disjointWith miracle:Vision ;
+.

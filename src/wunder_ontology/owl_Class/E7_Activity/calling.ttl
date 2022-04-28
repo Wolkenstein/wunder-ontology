@@ -1,0 +1,17 @@
+miracle:Calling a owl:Class ;    
+    rdfs:label
+        "Calling"@en ,
+        "Anrufung"@de ;
+    rdfs:subClassOf miracle:Activity ;    
+    skos:definition
+        "Calling of the Saints."@en ,
+        "Anrufung der Heiligen."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;    
+    owl:disjointWith miracle:Distress ;
+    owl:disjointWith miracle:Miracle ;
+    owl:disjointWith miracle:Pilgrimage ;
+    owl:disjointWith miracle:PresentationOfVotivOffering ;
+    owl:disjointWith miracle:Vision ;
+.

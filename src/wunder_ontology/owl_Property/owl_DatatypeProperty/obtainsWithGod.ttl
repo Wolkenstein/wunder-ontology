@@ -1,0 +1,10 @@
+dhpluso:obtainsWithGod a owl:ObjectProperty ;
+    rdfs:domain miracle:Saint ;
+    rdfs:range miracle:Miracle ;
+    rdfs:label
+        "obtains with God"@en ,
+        "erwirkt bei Gott"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

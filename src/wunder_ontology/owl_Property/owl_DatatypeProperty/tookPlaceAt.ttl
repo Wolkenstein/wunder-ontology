@@ -1,0 +1,11 @@
+dhpluso:tookPlaceAt a owl:ObjectProperty ;
+    rdfs:subPropertyOf ecrm:P7_took_place_at ;
+    rdfs:domain miracle:Activity ;
+    rdfs:range miracle:Place ;
+    rdfs:label
+        "took place at"@en ,
+        "fand an Ort statt"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

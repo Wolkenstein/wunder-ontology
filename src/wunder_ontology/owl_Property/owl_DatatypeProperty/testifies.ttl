@@ -1,0 +1,10 @@
+dhpluso:testifies a owl:ObjectProperty ;
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Miracle ;
+    rdfs:label
+        "testifies"@en ,
+        "bezeugt"@de ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+.

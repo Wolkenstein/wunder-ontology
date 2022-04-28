@@ -1,0 +1,16 @@
+miracle:Saint a owl:Class ;    
+    rdfs:label
+        "Saint"@en ,
+        "Heilige:r"@de ;
+    rdfs:subClassOf 
+        ecrm:E21_Person,
+        miracle:Actor ;    
+    skos:definition
+        "Saints invoked in a miracle report."@en ,
+        "In einem Wunderbericht angerufene:r Heilige:r."@de ;
+    dc:creator "Peter Hinkelmanns" ;    
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "{{ modificationDate }}" ;
+    owl:disjointWith miracle:Group ;
+    owl:disjointWith miracle:Person ;
+.
