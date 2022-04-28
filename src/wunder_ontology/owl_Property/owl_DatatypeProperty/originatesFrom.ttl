@@ -1,4 +1,4 @@
-dhpluso:originatesFrom a owl:ObjectProperty ;
+miracle:originatesFrom a owl:ObjectProperty ;
     rdfs:domain miracle:Person ;
     rdfs:range miracle:Place ;
     rdfs:label

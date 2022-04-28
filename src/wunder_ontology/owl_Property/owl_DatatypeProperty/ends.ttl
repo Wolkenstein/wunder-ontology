@@ -1,4 +1,4 @@
-dhpluso:ends a owl:ObjectProperty ;
+miracle:ends a owl:ObjectProperty ;
     rdfs:domain miracle:Miracle ;
     rdfs:range miracle:Distress ;
     rdfs:label

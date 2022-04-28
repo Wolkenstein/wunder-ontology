@@ -4,29 +4,7 @@
 @prefix miracle: <https://miracle.plus.ac.at/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<https://dh.plus.ac.at/constants/Prefixes> sh:declare [ sh:namespace "http://www.w3.org/2002/07/owl#" ;
-            sh:prefix "owl" ],
-        [ sh:namespace "http://www.w3.org/ns/shacl#" ;
-            sh:prefix "sh" ],
-        [ sh:namespace "http://www.w3.org/2004/02/skos/core#" ;
-            sh:prefix "skos" ],
-        [ sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
-            sh:prefix "rdf" ],
-        [ sh:namespace "https://miracle.plus.ac.at/ontology#" ;
-            sh:prefix "miracle" ],
-        [ sh:namespace "http://purl.org/dc/terms/" ;
-            sh:prefix "dcterms" ],
-        [ sh:namespace "http://purl.org/dc/elements/1.1/" ;
-            sh:prefix "dc" ],
-        [ sh:namespace "http://creativecommons.org/ns#" ;
-            sh:prefix "cc" ],
-        [ sh:namespace "http://erlangen-crm.org/211015/" ;
-            sh:prefix "ecrm" ],
-        [ sh:namespace "http://www.w3.org/2000/01/rdf-schema#" ;
-            sh:prefix "rdfs" ] .
 
 miracle:Offering a owl:Class ;
     rdfs:label "Votivgabe"@de,
@@ -38,15 +16,77 @@ miracle:Offering a owl:Class ;
     skos:definition "Votivgabe für ein vollbrachtes Wunder."@de,
         "Votive offering for a miracle performed."@en .
 
-miracle:Place a owl:Class ;
-    rdfs:label "Ort"@de,
-        "Place"@en ;
+miracle:adressedTo a owl:ObjectProperty ;
+    rdfs:label "gerichtet an"@de,
+        "addressed to"@en ;
     dc:creator "Peter Hinkelmanns" ;
     dcterms:created "2022-04-28" ;
     dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf ecrm:E21_Person ;
-    skos:definition "Genannter Ort in einem Wunderbericht."@de,
-        "Mentioned place in a miracle report."@en .
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Saint .
+
+miracle:asksFor a owl:ObjectProperty ;
+    rdfs:label "bittet um"@de,
+        "asks for"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Miracle .
+
+miracle:calls a owl:ObjectProperty ;
+    rdfs:label "ruft an"@de,
+        "calls"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Calling .
+
+miracle:ends a owl:ObjectProperty ;
+    rdfs:label "beendet"@de,
+        "ends"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Miracle ;
+    rdfs:range miracle:Distress .
+
+miracle:fulfils a owl:ObjectProperty ;
+    rdfs:label "erfüllt"@de,
+        "fulfils"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Pilgrimage ;
+    rdfs:range miracle:Condition .
+
+miracle:hasCondition a owl:ObjectProperty ;
+    rdfs:label "hat Bedingung"@de,
+        "has condition"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Vow ;
+    rdfs:range miracle:Condition .
+
+miracle:obtainsWithGod a owl:ObjectProperty ;
+    rdfs:label "erwirkt bei Gott"@de,
+        "obtains with God"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Saint ;
+    rdfs:range miracle:Miracle .
+
+miracle:offers a owl:ObjectProperty ;
+    rdfs:label "bietet an"@de,
+        "offers"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Vow .
 
 miracle:ontology a owl:Ontology ;
     rdfs:label "Wunder Ontologie"@de,
@@ -54,16 +94,60 @@ miracle:ontology a owl:Ontology ;
     rdfs:comment "The Miracle Ontology provides a descriptive model for accounts in early modern miracle collections"@de,
         "Die Wunder Ontologie bietet ein Beschreibungsmodell für Berichte in frühneuzeitlichen Wundersammlungen"@en .
 
-miracle:Condition a owl:Class ;
-    rdfs:label "Bedingung"@de,
-        "Condition"@en ;
+miracle:originatesFrom a owl:ObjectProperty ;
+    rdfs:label "stammt aus"@de,
+        "originates from"@en ;
     dc:creator "Peter Hinkelmanns" ;
     dcterms:created "2022-04-28" ;
     dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf ecrm:E33_Linguistic_Object ;
-    owl:disjointWith miracle:Consideration ;
-    skos:definition "Zu erfüllende Bedingung für ein vollbrachtes Wunder."@de,
-        "Condition to be fulfilled for a miracle to be performed."@en .
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Place .
+
+miracle:shallBeFulfilledBy a owl:ObjectProperty ;
+    rdfs:label "soll erfüllt werden durch"@de,
+        "shall be fulfilled by"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Vow ;
+    rdfs:range miracle:Person .
+
+miracle:suffers a owl:ObjectProperty ;
+    rdfs:label "erleidet"@de,
+        "suffers"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Distress .
+
+miracle:testifies a owl:ObjectProperty ;
+    rdfs:label "bezeugt"@de,
+        "testifies"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Person ;
+    rdfs:range miracle:Miracle .
+
+miracle:tookPlaceAt a owl:ObjectProperty ;
+    rdfs:label "fand an Ort statt"@de,
+        "took place at"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Activity ;
+    rdfs:range miracle:Place ;
+    rdfs:subPropertyOf ecrm:P7_took_place_at .
+
+miracle:triggeredBy a owl:ObjectProperty ;
+    rdfs:label "hat Auslöser"@de,
+        "triggered by"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:domain miracle:Calling ;
+    rdfs:range miracle:Distress .
 
 miracle:Consideration a owl:Class ;
     rdfs:label "Gelübde"@de,
@@ -89,18 +173,36 @@ miracle:Group a owl:Class ;
     skos:definition "Eine Gruppe von Personen."@de,
         "A group of persons."@en .
 
-miracle:Person a owl:Class ;
-    rdfs:label "Person"@de,
-        "Person"@en ;
+miracle:Place a owl:Class ;
+    rdfs:label "Ort"@de,
+        "Place"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:49" ;
+    rdfs:subClassOf ecrm:E53_Place ;
+    skos:definition "Genannter Ort in einem Wunderbericht."@de,
+        "Mentioned place in a miracle report."@en .
+
+miracle:Actor a owl:Class ;
+    rdfs:label "Akteur"@de,
+        "Actor"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:46" ;
+    rdfs:subClassOf ecrm:E39_Actor ;
+    skos:definition "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."@de,
+        "Person, Saint or group acting or mentioned in a miracle report."@en .
+
+miracle:Condition a owl:Class ;
+    rdfs:label "Bedingung"@de,
+        "Condition"@en ;
     dc:creator "Peter Hinkelmanns" ;
     dcterms:created "2022-04-28" ;
     dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf ecrm:E21_Person,
-        miracle:Actor ;
-    owl:disjointWith miracle:Group,
-        miracle:Saint ;
-    skos:definition "In einem Wunderbericht handelnde oder erwähnte Person."@de,
-        "Person acting or mentioned in a miracle report."@en .
+    rdfs:subClassOf ecrm:E33_Linguistic_Object ;
+    owl:disjointWith miracle:Consideration ;
+    skos:definition "Zu erfüllende Bedingung für ein vollbrachtes Wunder."@de,
+        "Condition to be fulfilled for a miracle to be performed."@en .
 
 miracle:Saint a owl:Class ;
     rdfs:label "Heilige:r"@de,
@@ -114,86 +216,6 @@ miracle:Saint a owl:Class ;
         miracle:Person ;
     skos:definition "In einem Wunderbericht angerufene:r Heilige:r."@de,
         "Saints invoked in a miracle report."@en .
-
-miracle:Actor a owl:Class ;
-    rdfs:label "Akteur"@de,
-        "Actor"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:46" ;
-    rdfs:subClassOf ecrm:E39_Actor ;
-    skos:definition "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."@de,
-        "Person, Saint or group acting or mentioned in a miracle report."@en .
-
-miracle:Activity a owl:Class ;
-    rdfs:label "Aktivität"@de,
-        "activity"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf ecrm:E7_Activity ;
-    skos:definition "Handlung im Kontext eines Wunderberichtes."@de,
-        "Action in the context of a miracle report."@en .
-
-miracle:Calling a owl:Class ;
-    rdfs:label "Anrufung"@de,
-        "Calling"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf miracle:Activity ;
-    owl:disjointWith miracle:Distress,
-        miracle:Miracle,
-        miracle:Pilgrimage,
-        miracle:PresentationOfVotivOffering,
-        miracle:Vision ;
-    skos:definition "Anrufung der Heiligen."@de,
-        "Calling of the Saints."@en .
-
-miracle:Distress a owl:Class ;
-    rdfs:label "Notlage"@de,
-        "Distress"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf miracle:Activity ;
-    owl:disjointWith miracle:Calling,
-        miracle:Miracle,
-        miracle:Pilgrimage,
-        miracle:PresentationOfVotivOffering,
-        miracle:Vision ;
-    skos:definition "Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll."@de,
-        "Distress from which is to be delivered by the miraculous intervention of God."@en .
-
-miracle:Miracle a owl:Class ;
-    rdfs:label "Wunder"@de,
-        "Miracle"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf miracle:Activity ;
-    owl:disjointWith miracle:Calling,
-        miracle:Distress,
-        miracle:Pilgrimage,
-        miracle:PresentationOfVotivOffering,
-        miracle:Vision ;
-    skos:definition "Ein Wunder-Ereignis."@de,
-        "A miracle event."@en .
-
-miracle:Pilgrimage a owl:Class ;
-    rdfs:label "Wallfahrt"@de,
-        "Pilgrimage"@en ;
-    dc:creator "Peter Hinkelmanns" ;
-    dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
-    rdfs:subClassOf miracle:Activity ;
-    owl:disjointWith miracle:Calling,
-        miracle:Distress,
-        miracle:Miracle,
-        miracle:PresentationOfVotivOffering,
-        miracle:Vision ;
-    skos:definition "Wallfahrt, die zum Dank für das Wunder unternommen wird."@de,
-        "Pilgrimage undertaken in thanksgiving for the miracle."@en .
 
 miracle:PresentationOfVotivOffering a owl:Class ;
     rdfs:label "Übergabe der Votivgabe"@de,
@@ -225,4 +247,87 @@ miracle:Vision a owl:Class ;
         miracle:PresentationOfVotivOffering ;
     skos:definition "Vision."@de,
         "Vision."@en .
+
+miracle:Activity a owl:Class ;
+    rdfs:label "Aktivität"@de,
+        "activity"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf ecrm:E7_Activity ;
+    skos:definition "Handlung im Kontext eines Wunderberichtes."@de,
+        "Action in the context of a miracle report."@en .
+
+miracle:Pilgrimage a owl:Class ;
+    rdfs:label "Wallfahrt"@de,
+        "Pilgrimage"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf miracle:Activity ;
+    owl:disjointWith miracle:Calling,
+        miracle:Distress,
+        miracle:Miracle,
+        miracle:PresentationOfVotivOffering,
+        miracle:Vision ;
+    skos:definition "Wallfahrt, die zum Dank für das Wunder unternommen wird."@de,
+        "Pilgrimage undertaken in thanksgiving for the miracle."@en .
+
+miracle:Person a owl:Class ;
+    rdfs:label "Person"@de,
+        "Person"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf ecrm:E21_Person,
+        miracle:Actor ;
+    owl:disjointWith miracle:Group,
+        miracle:Saint ;
+    skos:definition "In einem Wunderbericht handelnde oder erwähnte Person."@de,
+        "Person acting or mentioned in a miracle report."@en .
+
+miracle:Distress a owl:Class ;
+    rdfs:label "Notlage"@de,
+        "Distress"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf miracle:Activity ;
+    owl:disjointWith miracle:Calling,
+        miracle:Miracle,
+        miracle:Pilgrimage,
+        miracle:PresentationOfVotivOffering,
+        miracle:Vision ;
+    skos:definition "Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll."@de,
+        "Distress from which is to be delivered by the miraculous intervention of God."@en .
+
+miracle:Miracle a owl:Class ;
+    rdfs:label "Wunder"@de,
+        "Miracle"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf miracle:Activity ;
+    owl:disjointWith miracle:Calling,
+        miracle:Distress,
+        miracle:Pilgrimage,
+        miracle:PresentationOfVotivOffering,
+        miracle:Vision ;
+    skos:definition "Ein Wunder-Ereignis."@de,
+        "A miracle event."@en .
+
+miracle:Calling a owl:Class ;
+    rdfs:label "Anrufung"@de,
+        "Calling"@en ;
+    dc:creator "Peter Hinkelmanns" ;
+    dcterms:created "2022-04-28" ;
+    dcterms:modified "2022-04-28+13:37" ;
+    rdfs:subClassOf miracle:Activity ;
+    owl:disjointWith miracle:Distress,
+        miracle:Miracle,
+        miracle:Pilgrimage,
+        miracle:PresentationOfVotivOffering,
+        miracle:Vision ;
+    skos:definition "Anrufung der Heiligen."@de,
+        "Calling of the Saints."@en .
 

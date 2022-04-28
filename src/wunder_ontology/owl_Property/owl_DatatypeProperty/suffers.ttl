@@ -1,4 +1,4 @@
-dhpluso:suffers a owl:ObjectProperty ;
+miracle:suffers a owl:ObjectProperty ;
     rdfs:domain miracle:Person ;
     rdfs:range miracle:Distress ;
     rdfs:label

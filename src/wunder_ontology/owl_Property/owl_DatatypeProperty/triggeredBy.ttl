@@ -1,4 +1,4 @@
-dhpluso:triggeredBy a owl:ObjectProperty ;
+miracle:triggeredBy a owl:ObjectProperty ;
     rdfs:domain miracle:Calling ;
     rdfs:range miracle:Distress ;
     rdfs:label

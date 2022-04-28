@@ -1,4 +1,4 @@
-dhpluso:shallBeFulfilledBy a owl:ObjectProperty ;
+miracle:shallBeFulfilledBy a owl:ObjectProperty ;
     rdfs:domain miracle:Vow ;
     rdfs:range miracle:Person ;
     rdfs:label

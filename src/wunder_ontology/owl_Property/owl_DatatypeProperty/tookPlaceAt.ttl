@@ -1,4 +1,4 @@
-dhpluso:tookPlaceAt a owl:ObjectProperty ;
+miracle:tookPlaceAt a owl:ObjectProperty ;
     rdfs:subPropertyOf ecrm:P7_took_place_at ;
     rdfs:domain miracle:Activity ;
     rdfs:range miracle:Place ;

@@ -1,4 +1,4 @@
-dhpluso:adressedTo a owl:ObjectProperty ;
+miracle:adressedTo a owl:ObjectProperty ;
     rdfs:domain miracle:Calling ;
     rdfs:range miracle:Saint ;
     rdfs:label

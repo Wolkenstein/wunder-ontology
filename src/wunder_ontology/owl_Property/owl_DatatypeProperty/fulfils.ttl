@@ -1,4 +1,4 @@
-dhpluso:fulfils a owl:ObjectProperty ;
+miracle:fulfils a owl:ObjectProperty ;
     rdfs:domain miracle:Pilgrimage ;
     rdfs:range miracle:Condition ;
     rdfs:label

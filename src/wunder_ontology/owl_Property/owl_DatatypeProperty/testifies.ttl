@@ -1,4 +1,4 @@
-dhpluso:testifies a owl:ObjectProperty ;
+miracle:testifies a owl:ObjectProperty ;
     rdfs:domain miracle:Person ;
     rdfs:range miracle:Miracle ;
     rdfs:label
