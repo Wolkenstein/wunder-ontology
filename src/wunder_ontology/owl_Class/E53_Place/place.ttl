@@ -2,7 +2,7 @@ miracle:Place a owl:Class ;
     rdfs:label
         "Place"@en ,
         "Ort"@de ;
-    rdfs:subClassOf ecrm:E21_Person ;    
+    rdfs:subClassOf ecrm:E53_Place ;    
     skos:definition
         "Mentioned place in a miracle report."@en ,
         "Genannter Ort in einem Wunderbericht."@de ;
