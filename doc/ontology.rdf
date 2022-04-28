@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://miracle.plus.ac.at/ontology#ontology#"
+     xml:base="https://miracle.plus.ac.at/ontology#ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://miracle.plus.ac.at/ontology#ontology">
+        <rdfs:comment xml:lang="en">Die Wunder Ontologie bietet ein Beschreibungsmodell für Berichte in frühneuzeitlichen Wundersammlungen</rdfs:comment>
+        <rdfs:comment xml:lang="de">The Miracle Ontology provides a descriptive model for accounts in early modern miracle collections</rdfs:comment>
+        <rdfs:label xml:lang="en">Miracle Ontology</rdfs:label>
+        <rdfs:label xml:lang="de">Wunder Ontologie</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#declare -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#declare"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#namespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#namespace"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#prefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#prefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E10_Transfer_of_Custody -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E10_Transfer_of_Custody"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E18_Physical_Thing -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E21_Person -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E21_Person"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E33_Linguistic_Object -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E33_Linguistic_Object"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E39_Actor -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E39_Actor"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E74_Group -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E74_Group"/>
+    
+
+
+    <!-- http://erlangen-crm.org/211015/E7_Activity -->
+
+
+    <owl:Class rdf:about="http://erlangen-crm.org/211015/E7_Activity"/>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Activity -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Activity">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E7_Activity"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Aktivität</rdfs:label>
+        <rdfs:label xml:lang="en">activity</rdfs:label>
+        <skos:definition xml:lang="en">Action in the context of a miracle report.</skos:definition>
+        <skos:definition xml:lang="de">Handlung im Kontext eines Wunderberichtes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Actor -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Actor">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E39_Actor"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+        <skos:definition xml:lang="de">Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird.</skos:definition>
+        <skos:definition xml:lang="en">Person, Saint or group acting or mentioned in a miracle report.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Calling -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Calling">
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Activity"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Distress"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Miracle"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Pilgrimage"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Anrufung</rdfs:label>
+        <rdfs:label xml:lang="en">Calling</rdfs:label>
+        <skos:definition xml:lang="de">Anrufung der Heiligen.</skos:definition>
+        <skos:definition xml:lang="en">Calling of the Saints.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Condition -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Condition">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E33_Linguistic_Object"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Consideration"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Bedingung</rdfs:label>
+        <rdfs:label xml:lang="en">Condition</rdfs:label>
+        <skos:definition xml:lang="en">Condition to be fulfilled for a miracle to be performed.</skos:definition>
+        <skos:definition xml:lang="de">Zu erfüllende Bedingung für ein vollbrachtes Wunder.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Consideration -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Consideration">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E33_Linguistic_Object"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Gelübde</rdfs:label>
+        <rdfs:label xml:lang="en">Vow</rdfs:label>
+        <skos:definition xml:lang="en">Vow to be fulfilled for a miracle to be performed.</skos:definition>
+        <skos:definition xml:lang="de">Zu erfüllendes Gelübde für ein vollbrachtes Wunder.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Distress -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Distress">
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Activity"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Miracle"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Pilgrimage"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Distress</rdfs:label>
+        <rdfs:label xml:lang="de">Notlage</rdfs:label>
+        <skos:definition xml:lang="en">Distress from which is to be delivered by the miraculous intervention of God.</skos:definition>
+        <skos:definition xml:lang="de">Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Group -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Group">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E74_Group"/>
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Actor"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Person"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Saint"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Person group</rdfs:label>
+        <rdfs:label xml:lang="de">Personengruppe</rdfs:label>
+        <skos:definition xml:lang="en">A group of persons.</skos:definition>
+        <skos:definition xml:lang="de">Eine Gruppe von Personen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Miracle -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Miracle">
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Activity"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Pilgrimage"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Miracle</rdfs:label>
+        <rdfs:label xml:lang="de">Wunder</rdfs:label>
+        <skos:definition xml:lang="en">A miracle event.</skos:definition>
+        <skos:definition xml:lang="de">Ein Wunder-Ereignis.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Offering -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Offering">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E18_Physical_Thing"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Offering</rdfs:label>
+        <rdfs:label xml:lang="de">Votivgabe</rdfs:label>
+        <skos:definition xml:lang="en">Votive offering for a miracle performed.</skos:definition>
+        <skos:definition xml:lang="de">Votivgabe für ein vollbrachtes Wunder.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Person -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E21_Person"/>
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Actor"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Saint"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <skos:definition xml:lang="de">In einem Wunderbericht handelnde oder erwähnte Person.</skos:definition>
+        <skos:definition xml:lang="en">Person acting or mentioned in a miracle report.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Pilgrimage -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Pilgrimage">
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Activity"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="en">Pilgrimage</rdfs:label>
+        <rdfs:label xml:lang="de">Wallfahrt</rdfs:label>
+        <skos:definition xml:lang="en">Pilgrimage undertaken in thanksgiving for the miracle.</skos:definition>
+        <skos:definition xml:lang="de">Wallfahrt, die zum Dank für das Wunder unternommen wird.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Place -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Place">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E21_Person"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <skos:definition xml:lang="de">Genannter Ort in einem Wunderbericht.</skos:definition>
+        <skos:definition xml:lang="en">Mentioned place in a miracle report.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E10_Transfer_of_Custody"/>
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Activity"/>
+        <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Presentation of the votive offering</rdfs:label>
+        <rdfs:label xml:lang="en">Übergabe der Votivgabe</rdfs:label>
+        <skos:definition xml:lang="en">Presentation of the votive offering as fulfilment of a condition of the vow.</skos:definition>
+        <skos:definition xml:lang="de">Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Saint -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Saint">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E21_Person"/>
+        <rdfs:subClassOf rdf:resource="https://miracle.plus.ac.at/ontology#Actor"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Heilige:r</rdfs:label>
+        <rdfs:label xml:lang="en">Saint</rdfs:label>
+        <skos:definition xml:lang="de">In einem Wunderbericht angerufene:r Heilige:r.</skos:definition>
+        <skos:definition xml:lang="en">Saints invoked in a miracle report.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://miracle.plus.ac.at/ontology#Vision -->
+
+
+    <owl:Class rdf:about="https://miracle.plus.ac.at/ontology#Vision">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E7_Activity"/>
+        <dc:creator>Peter Hinkelmanns</dc:creator>
+        <terms:created>2022-04-28</terms:created>
+        <terms:modified>2022-04-28+13:37</terms:modified>
+        <rdfs:label xml:lang="de">Vision</rdfs:label>
+        <rdfs:label xml:lang="en">Vision</rdfs:label>
+        <skos:definition xml:lang="de">Vision.</skos:definition>
+        <skos:definition xml:lang="en">Vision.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://dh.plus.ac.at/constants/Prefixes">
+        <shacl:declare rdf:nodeID="genid1"/>
+        <shacl:declare rdf:nodeID="genid2"/>
+        <shacl:declare rdf:nodeID="genid3"/>
+        <shacl:declare rdf:nodeID="genid4"/>
+        <shacl:declare rdf:nodeID="genid5"/>
+        <shacl:declare rdf:nodeID="genid6"/>
+        <shacl:declare rdf:nodeID="genid7"/>
+        <shacl:declare rdf:nodeID="genid8"/>
+        <shacl:declare rdf:nodeID="genid9"/>
+        <shacl:declare rdf:nodeID="genid10"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid1">
+        <shacl:namespace>http://www.w3.org/ns/shacl#</shacl:namespace>
+        <shacl:prefix>sh</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <shacl:namespace>http://www.w3.org/2000/01/rdf-schema#</shacl:namespace>
+        <shacl:prefix>rdfs</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <shacl:namespace>http://erlangen-crm.org/211015/</shacl:namespace>
+        <shacl:prefix>ecrm</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <shacl:namespace>https://miracle.plus.ac.at/ontology#</shacl:namespace>
+        <shacl:prefix>miracle</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <shacl:namespace>http://creativecommons.org/ns#</shacl:namespace>
+        <shacl:prefix>cc</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <shacl:namespace>http://purl.org/dc/elements/1.1/</shacl:namespace>
+        <shacl:prefix>dc</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <shacl:namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</shacl:namespace>
+        <shacl:prefix>rdf</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <shacl:namespace>http://www.w3.org/2002/07/owl#</shacl:namespace>
+        <shacl:prefix>owl</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <shacl:namespace>http://purl.org/dc/terms/</shacl:namespace>
+        <shacl:prefix>dcterms</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <shacl:namespace>http://www.w3.org/2004/02/skos/core#</shacl:namespace>
+        <shacl:prefix>skos</shacl:prefix>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

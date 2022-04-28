@@ -1,7 +1,7 @@
 miracle:Actor a owl:Class ;    
     rdfs:label
         "Actor"@en ,
-        "Aktör"@de ;
+        "Akteur"@de ;
     rdfs:subClassOf ecrm:E39_Actor ;    
     skos:definition
         "Person, Saint or group acting or mentioned in a miracle report."@en ,

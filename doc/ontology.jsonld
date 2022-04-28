@@ -1,0 +1,652 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/ns/shacl#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "sh"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/2004/02/skos/core#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "skos"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/2000/01/rdf-schema#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "rdfs"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://erlangen-crm.org/211015/"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "ecrm"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "https://miracle.plus.ac.at/ontology#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "miracle"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://creativecommons.org/ns#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "cc"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://purl.org/dc/elements/1.1/"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "dc"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "rdf"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/2002/07/owl#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "owl"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "dcterms"
+  } ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E10_Transfer_of_Custody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E18_Physical_Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E21_Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E33_Linguistic_Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E39_Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E74_Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://erlangen-crm.org/211015/E7_Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#declare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#namespace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#prefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://dh.plus.ac.at/constants/Prefixes",
+  "http://www.w3.org/ns/shacl#declare" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Aktivität"
+  }, {
+    "@language" : "en",
+    "@value" : "activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E7_Activity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Action in the context of a miracle report."
+  }, {
+    "@language" : "de",
+    "@value" : "Handlung im Kontext eines Wunderberichtes."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actor"
+  }, {
+    "@language" : "de",
+    "@value" : "Akteur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E39_Actor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."
+  }, {
+    "@language" : "en",
+    "@value" : "Person, Saint or group acting or mentioned in a miracle report."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Calling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Anrufung"
+  }, {
+    "@language" : "en",
+    "@value" : "Calling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Distress"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Miracle"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Pilgrimage"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Vision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Anrufung der Heiligen."
+  }, {
+    "@language" : "en",
+    "@value" : "Calling of the Saints."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bedingung"
+  }, {
+    "@language" : "en",
+    "@value" : "Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E33_Linguistic_Object"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Consideration"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Condition to be fulfilled for a miracle to be performed."
+  }, {
+    "@language" : "de",
+    "@value" : "Zu erfüllende Bedingung für ein vollbrachtes Wunder."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Consideration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gelübde"
+  }, {
+    "@language" : "en",
+    "@value" : "Vow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E33_Linguistic_Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Vow to be fulfilled for a miracle to be performed."
+  }, {
+    "@language" : "de",
+    "@value" : "Zu erfüllendes Gelübde für ein vollbrachtes Wunder."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Distress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Distress"
+  }, {
+    "@language" : "de",
+    "@value" : "Notlage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Miracle"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Pilgrimage"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Vision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Distress from which is to be delivered by the miraculous intervention of God."
+  }, {
+    "@language" : "de",
+    "@value" : "Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person group"
+  }, {
+    "@language" : "de",
+    "@value" : "Personengruppe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E74_Group"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Person"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Saint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A group of persons."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Gruppe von Personen."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Miracle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Miracle"
+  }, {
+    "@language" : "de",
+    "@value" : "Wunder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Pilgrimage"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Vision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A miracle event."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein Wunder-Ereignis."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Offering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Offering"
+  }, {
+    "@language" : "de",
+    "@value" : "Votivgabe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E18_Physical_Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Votive offering for a miracle performed."
+  }, {
+    "@language" : "de",
+    "@value" : "Votivgabe für ein vollbrachtes Wunder."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Person"
+  }, {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E21_Person"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Saint"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "In einem Wunderbericht handelnde oder erwähnte Person."
+  }, {
+    "@language" : "en",
+    "@value" : "Person acting or mentioned in a miracle report."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Pilgrimage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pilgrimage"
+  }, {
+    "@language" : "de",
+    "@value" : "Wallfahrt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Vision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Pilgrimage undertaken in thanksgiving for the miracle."
+  }, {
+    "@language" : "de",
+    "@value" : "Wallfahrt, die zum Dank für das Wunder unternommen wird."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ort"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E21_Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Genannter Ort in einem Wunderbericht."
+  }, {
+    "@language" : "en",
+    "@value" : "Mentioned place in a miracle report."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Presentation of the votive offering"
+  }, {
+    "@language" : "en",
+    "@value" : "Übergabe der Votivgabe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E10_Transfer_of_Custody"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://miracle.plus.ac.at/ontology#Vision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Presentation of the votive offering as fulfilment of a condition of the vow."
+  }, {
+    "@language" : "de",
+    "@value" : "Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Saint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Heilige:r"
+  }, {
+    "@language" : "en",
+    "@value" : "Saint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E21_Person"
+  }, {
+    "@id" : "https://miracle.plus.ac.at/ontology#Actor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "In einem Wunderbericht angerufene:r Heilige:r."
+  }, {
+    "@language" : "en",
+    "@value" : "Saints invoked in a miracle report."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#Vision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Peter Hinkelmanns"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2022-04-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-04-28+13:37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Vision"
+  }, {
+    "@language" : "en",
+    "@value" : "Vision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://erlangen-crm.org/211015/E7_Activity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Vision."
+  }, {
+    "@language" : "en",
+    "@value" : "Vision."
+  } ]
+}, {
+  "@id" : "https://miracle.plus.ac.at/ontology#ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Die Wunder Ontologie bietet ein Beschreibungsmodell für Berichte in frühneuzeitlichen Wundersammlungen"
+  }, {
+    "@language" : "de",
+    "@value" : "The Miracle Ontology provides a descriptive model for accounts in early modern miracle collections"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Miracle Ontology"
+  }, {
+    "@language" : "de",
+    "@value" : "Wunder Ontologie"
+  } ]
+} ]

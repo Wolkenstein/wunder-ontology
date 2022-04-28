@@ -1,0 +1,294 @@
+<https://miracle.plus.ac.at/ontology#ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://miracle.plus.ac.at/ontology#ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Die Wunder Ontologie bietet ein Beschreibungsmodell für Berichte in frühneuzeitlichen Wundersammlungen"@en .
+<https://miracle.plus.ac.at/ontology#ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "The Miracle Ontology provides a descriptive model for accounts in early modern miracle collections"@de .
+<https://miracle.plus.ac.at/ontology#ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Miracle Ontology"@en .
+<https://miracle.plus.ac.at/ontology#ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Wunder Ontologie"@de .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#declare
+<http://www.w3.org/ns/shacl#declare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#namespace
+<http://www.w3.org/ns/shacl#namespace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#prefix
+<http://www.w3.org/ns/shacl#prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://erlangen-crm.org/211015/E10_Transfer_of_Custody
+<http://erlangen-crm.org/211015/E10_Transfer_of_Custody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E18_Physical_Thing
+<http://erlangen-crm.org/211015/E18_Physical_Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E21_Person
+<http://erlangen-crm.org/211015/E21_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E33_Linguistic_Object
+<http://erlangen-crm.org/211015/E33_Linguistic_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E39_Actor
+<http://erlangen-crm.org/211015/E39_Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E74_Group
+<http://erlangen-crm.org/211015/E74_Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/211015/E7_Activity
+<http://erlangen-crm.org/211015/E7_Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://miracle.plus.ac.at/ontology#Activity
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E7_Activity> .
+<https://miracle.plus.ac.at/ontology#Activity> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Activity> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Activity> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Aktivität"@de .
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "activity"@en .
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/2004/02/skos/core#definition> "Action in the context of a miracle report."@en .
+<https://miracle.plus.ac.at/ontology#Activity> <http://www.w3.org/2004/02/skos/core#definition> "Handlung im Kontext eines Wunderberichtes."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Actor
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E39_Actor> .
+<https://miracle.plus.ac.at/ontology#Actor> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Actor> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Actor> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Akteur"@de .
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/2004/02/skos/core#definition> "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."@de .
+<https://miracle.plus.ac.at/ontology#Actor> <http://www.w3.org/2004/02/skos/core#definition> "Person, Saint or group acting or mentioned in a miracle report."@en .
+# 
+# https://miracle.plus.ac.at/ontology#Calling
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Activity> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Distress> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Miracle> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Pilgrimage> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Vision> .
+<https://miracle.plus.ac.at/ontology#Calling> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Calling> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Calling> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2000/01/rdf-schema#label> "Anrufung"@de .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2000/01/rdf-schema#label> "Calling"@en .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2004/02/skos/core#definition> "Anrufung der Heiligen."@de .
+<https://miracle.plus.ac.at/ontology#Calling> <http://www.w3.org/2004/02/skos/core#definition> "Calling of the Saints."@en .
+# 
+# https://miracle.plus.ac.at/ontology#Condition
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E33_Linguistic_Object> .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Consideration> .
+<https://miracle.plus.ac.at/ontology#Condition> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Condition> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Condition> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Bedingung"@de .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition"@en .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2004/02/skos/core#definition> "Condition to be fulfilled for a miracle to be performed."@en .
+<https://miracle.plus.ac.at/ontology#Condition> <http://www.w3.org/2004/02/skos/core#definition> "Zu erfüllende Bedingung für ein vollbrachtes Wunder."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Consideration
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E33_Linguistic_Object> .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/2000/01/rdf-schema#label> "Gelübde"@de .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/2000/01/rdf-schema#label> "Vow"@en .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/2004/02/skos/core#definition> "Vow to be fulfilled for a miracle to be performed."@en .
+<https://miracle.plus.ac.at/ontology#Consideration> <http://www.w3.org/2004/02/skos/core#definition> "Zu erfüllendes Gelübde für ein vollbrachtes Wunder."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Distress
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Activity> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Miracle> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Pilgrimage> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Vision> .
+<https://miracle.plus.ac.at/ontology#Distress> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Distress> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Distress> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2000/01/rdf-schema#label> "Distress"@en .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2000/01/rdf-schema#label> "Notlage"@de .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2004/02/skos/core#definition> "Distress from which is to be delivered by the miraculous intervention of God."@en .
+<https://miracle.plus.ac.at/ontology#Distress> <http://www.w3.org/2004/02/skos/core#definition> "Notlage, aus der durch das wundersame Einwirken Gottes befreit werden soll."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Group
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E74_Group> .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Actor> .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Person> .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Saint> .
+<https://miracle.plus.ac.at/ontology#Group> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Group> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Group> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Person group"@en .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Personengruppe"@de .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2004/02/skos/core#definition> "A group of persons."@en .
+<https://miracle.plus.ac.at/ontology#Group> <http://www.w3.org/2004/02/skos/core#definition> "Eine Gruppe von Personen."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Miracle
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Activity> .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Pilgrimage> .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Vision> .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2000/01/rdf-schema#label> "Miracle"@en .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2000/01/rdf-schema#label> "Wunder"@de .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2004/02/skos/core#definition> "A miracle event."@en .
+<https://miracle.plus.ac.at/ontology#Miracle> <http://www.w3.org/2004/02/skos/core#definition> "Ein Wunder-Ereignis."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Offering
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E18_Physical_Thing> .
+<https://miracle.plus.ac.at/ontology#Offering> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Offering> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Offering> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/2000/01/rdf-schema#label> "Offering"@en .
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/2000/01/rdf-schema#label> "Votivgabe"@de .
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/2004/02/skos/core#definition> "Votive offering for a miracle performed."@en .
+<https://miracle.plus.ac.at/ontology#Offering> <http://www.w3.org/2004/02/skos/core#definition> "Votivgabe für ein vollbrachtes Wunder."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Person
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E21_Person> .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Actor> .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Saint> .
+<https://miracle.plus.ac.at/ontology#Person> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Person> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Person> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@de .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2004/02/skos/core#definition> "In einem Wunderbericht handelnde oder erwähnte Person."@de .
+<https://miracle.plus.ac.at/ontology#Person> <http://www.w3.org/2004/02/skos/core#definition> "Person acting or mentioned in a miracle report."@en .
+# 
+# https://miracle.plus.ac.at/ontology#Pilgrimage
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Activity> .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Vision> .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2000/01/rdf-schema#label> "Pilgrimage"@en .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2000/01/rdf-schema#label> "Wallfahrt"@de .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2004/02/skos/core#definition> "Pilgrimage undertaken in thanksgiving for the miracle."@en .
+<https://miracle.plus.ac.at/ontology#Pilgrimage> <http://www.w3.org/2004/02/skos/core#definition> "Wallfahrt, die zum Dank für das Wunder unternommen wird."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Place
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E21_Person> .
+<https://miracle.plus.ac.at/ontology#Place> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Place> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Place> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Ort"@de .
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/2004/02/skos/core#definition> "Genannter Ort in einem Wunderbericht."@de .
+<https://miracle.plus.ac.at/ontology#Place> <http://www.w3.org/2004/02/skos/core#definition> "Mentioned place in a miracle report."@en .
+# 
+# https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E10_Transfer_of_Custody> .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Activity> .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2002/07/owl#disjointWith> <https://miracle.plus.ac.at/ontology#Vision> .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2000/01/rdf-schema#label> "Presentation of the votive offering"@de .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2000/01/rdf-schema#label> "Übergabe der Votivgabe"@en .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2004/02/skos/core#definition> "Presentation of the votive offering as fulfilment of a condition of the vow."@en .
+<https://miracle.plus.ac.at/ontology#PresentationOfVotivOffering> <http://www.w3.org/2004/02/skos/core#definition> "Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes."@de .
+# 
+# https://miracle.plus.ac.at/ontology#Saint
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E21_Person> .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://miracle.plus.ac.at/ontology#Actor> .
+<https://miracle.plus.ac.at/ontology#Saint> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Saint> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Saint> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2000/01/rdf-schema#label> "Heilige:r"@de .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2000/01/rdf-schema#label> "Saint"@en .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2004/02/skos/core#definition> "In einem Wunderbericht angerufene:r Heilige:r."@de .
+<https://miracle.plus.ac.at/ontology#Saint> <http://www.w3.org/2004/02/skos/core#definition> "Saints invoked in a miracle report."@en .
+# 
+# https://miracle.plus.ac.at/ontology#Vision
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erlangen-crm.org/211015/E7_Activity> .
+<https://miracle.plus.ac.at/ontology#Vision> <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" .
+<https://miracle.plus.ac.at/ontology#Vision> <http://purl.org/dc/terms/created> "2022-04-28" .
+<https://miracle.plus.ac.at/ontology#Vision> <http://purl.org/dc/terms/modified> "2022-04-28+13:37" .
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/2000/01/rdf-schema#label> "Vision"@de .
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/2000/01/rdf-schema#label> "Vision"@en .
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/2004/02/skos/core#definition> "Vision."@de .
+<https://miracle.plus.ac.at/ontology#Vision> <http://www.w3.org/2004/02/skos/core#definition> "Vision."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid1 .
+_:genid1 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/ns/shacl#" .
+_:genid1 <http://www.w3.org/ns/shacl#prefix> "sh" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid2 .
+_:genid2 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2000/01/rdf-schema#" .
+_:genid2 <http://www.w3.org/ns/shacl#prefix> "rdfs" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid3 .
+_:genid3 <http://www.w3.org/ns/shacl#namespace> "http://erlangen-crm.org/211015/" .
+_:genid3 <http://www.w3.org/ns/shacl#prefix> "ecrm" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid4 .
+_:genid4 <http://www.w3.org/ns/shacl#namespace> "https://miracle.plus.ac.at/ontology#" .
+_:genid4 <http://www.w3.org/ns/shacl#prefix> "miracle" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid5 .
+_:genid5 <http://www.w3.org/ns/shacl#namespace> "http://creativecommons.org/ns#" .
+_:genid5 <http://www.w3.org/ns/shacl#prefix> "cc" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid6 .
+_:genid6 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/elements/1.1/" .
+_:genid6 <http://www.w3.org/ns/shacl#prefix> "dc" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid7 .
+_:genid7 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+_:genid7 <http://www.w3.org/ns/shacl#prefix> "rdf" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid8 .
+_:genid8 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2002/07/owl#" .
+_:genid8 <http://www.w3.org/ns/shacl#prefix> "owl" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid9 .
+_:genid9 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/terms/" .
+_:genid9 <http://www.w3.org/ns/shacl#prefix> "dcterms" .
+<https://dh.plus.ac.at/constants/Prefixes> <http://www.w3.org/ns/shacl#declare> _:genid10 .
+_:genid10 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2004/02/skos/core#" .
+_:genid10 <http://www.w3.org/ns/shacl#prefix> "skos" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
