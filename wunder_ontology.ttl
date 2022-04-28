@@ -7,26 +7,26 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://dh.plus.ac.at/constants/Prefixes> sh:declare [ sh:namespace "http://www.w3.org/ns/shacl#" ;
+<https://dh.plus.ac.at/constants/Prefixes> sh:declare [ sh:namespace "http://www.w3.org/2002/07/owl#" ;
+            sh:prefix "owl" ],
+        [ sh:namespace "http://www.w3.org/ns/shacl#" ;
             sh:prefix "sh" ],
-        [ sh:namespace "http://www.w3.org/2000/01/rdf-schema#" ;
-            sh:prefix "rdfs" ],
-        [ sh:namespace "http://erlangen-crm.org/211015/" ;
-            sh:prefix "ecrm" ],
-        [ sh:namespace "https://miracle.plus.ac.at/ontology#" ;
-            sh:prefix "miracle" ],
-        [ sh:namespace "http://creativecommons.org/ns#" ;
-            sh:prefix "cc" ],
-        [ sh:namespace "http://purl.org/dc/elements/1.1/" ;
-            sh:prefix "dc" ],
+        [ sh:namespace "http://www.w3.org/2004/02/skos/core#" ;
+            sh:prefix "skos" ],
         [ sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
             sh:prefix "rdf" ],
-        [ sh:namespace "http://www.w3.org/2002/07/owl#" ;
-            sh:prefix "owl" ],
+        [ sh:namespace "https://miracle.plus.ac.at/ontology#" ;
+            sh:prefix "miracle" ],
         [ sh:namespace "http://purl.org/dc/terms/" ;
             sh:prefix "dcterms" ],
-        [ sh:namespace "http://www.w3.org/2004/02/skos/core#" ;
-            sh:prefix "skos" ] .
+        [ sh:namespace "http://purl.org/dc/elements/1.1/" ;
+            sh:prefix "dc" ],
+        [ sh:namespace "http://creativecommons.org/ns#" ;
+            sh:prefix "cc" ],
+        [ sh:namespace "http://erlangen-crm.org/211015/" ;
+            sh:prefix "ecrm" ],
+        [ sh:namespace "http://www.w3.org/2000/01/rdf-schema#" ;
+            sh:prefix "rdfs" ] .
 
 miracle:Offering a owl:Class ;
     rdfs:label "Votivgabe"@de,
@@ -120,7 +120,7 @@ miracle:Actor a owl:Class ;
         "Actor"@en ;
     dc:creator "Peter Hinkelmanns" ;
     dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
+    dcterms:modified "2022-04-28+13:46" ;
     rdfs:subClassOf ecrm:E39_Actor ;
     skos:definition "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."@de,
         "Person, Saint or group acting or mentioned in a miracle report."@en .
@@ -196,11 +196,11 @@ miracle:Pilgrimage a owl:Class ;
         "Pilgrimage undertaken in thanksgiving for the miracle."@en .
 
 miracle:PresentationOfVotivOffering a owl:Class ;
-    rdfs:label "Presentation of the votive offering"@de,
-        "Übergabe der Votivgabe"@en ;
+    rdfs:label "Übergabe der Votivgabe"@de,
+        "Presentation of the votive offering"@en ;
     dc:creator "Peter Hinkelmanns" ;
     dcterms:created "2022-04-28" ;
-    dcterms:modified "2022-04-28+13:37" ;
+    dcterms:modified "2022-04-28+13:48" ;
     rdfs:subClassOf ecrm:E10_Transfer_of_Custody,
         miracle:Activity ;
     owl:disjointWith miracle:Calling,

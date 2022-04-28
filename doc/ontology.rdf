@@ -164,7 +164,7 @@
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/211015/E39_Actor"/>
         <dc:creator>Peter Hinkelmanns</dc:creator>
         <terms:created>2022-04-28</terms:created>
-        <terms:modified>2022-04-28+13:37</terms:modified>
+        <terms:modified>2022-04-28+13:46</terms:modified>
         <rdfs:label xml:lang="en">Actor</rdfs:label>
         <rdfs:label xml:lang="de">Akteur</rdfs:label>
         <skos:definition xml:lang="de">Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird.</skos:definition>
@@ -362,9 +362,9 @@
         <owl:disjointWith rdf:resource="https://miracle.plus.ac.at/ontology#Vision"/>
         <dc:creator>Peter Hinkelmanns</dc:creator>
         <terms:created>2022-04-28</terms:created>
-        <terms:modified>2022-04-28+13:37</terms:modified>
-        <rdfs:label xml:lang="de">Presentation of the votive offering</rdfs:label>
-        <rdfs:label xml:lang="en">Übergabe der Votivgabe</rdfs:label>
+        <terms:modified>2022-04-28+13:48</terms:modified>
+        <rdfs:label xml:lang="en">Presentation of the votive offering</rdfs:label>
+        <rdfs:label xml:lang="de">Übergabe der Votivgabe</rdfs:label>
         <skos:definition xml:lang="en">Presentation of the votive offering as fulfilment of a condition of the vow.</skos:definition>
         <skos:definition xml:lang="de">Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes.</skos:definition>
     </owl:Class>
@@ -426,44 +426,44 @@
         <shacl:declare rdf:nodeID="genid10"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid1">
-        <shacl:namespace>http://www.w3.org/ns/shacl#</shacl:namespace>
-        <shacl:prefix>sh</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
-        <shacl:namespace>http://www.w3.org/2000/01/rdf-schema#</shacl:namespace>
-        <shacl:prefix>rdfs</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
-        <shacl:namespace>http://erlangen-crm.org/211015/</shacl:namespace>
-        <shacl:prefix>ecrm</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid4">
-        <shacl:namespace>https://miracle.plus.ac.at/ontology#</shacl:namespace>
-        <shacl:prefix>miracle</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid5">
-        <shacl:namespace>http://creativecommons.org/ns#</shacl:namespace>
-        <shacl:prefix>cc</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid6">
-        <shacl:namespace>http://purl.org/dc/elements/1.1/</shacl:namespace>
-        <shacl:prefix>dc</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid7">
-        <shacl:namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</shacl:namespace>
-        <shacl:prefix>rdf</shacl:prefix>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
         <shacl:namespace>http://www.w3.org/2002/07/owl#</shacl:namespace>
         <shacl:prefix>owl</shacl:prefix>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
+    <rdf:Description rdf:nodeID="genid2">
+        <shacl:namespace>http://www.w3.org/ns/shacl#</shacl:namespace>
+        <shacl:prefix>sh</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <shacl:namespace>http://www.w3.org/2004/02/skos/core#</shacl:namespace>
+        <shacl:prefix>skos</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <shacl:namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</shacl:namespace>
+        <shacl:prefix>rdf</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <shacl:namespace>https://miracle.plus.ac.at/ontology#</shacl:namespace>
+        <shacl:prefix>miracle</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
         <shacl:namespace>http://purl.org/dc/terms/</shacl:namespace>
         <shacl:prefix>dcterms</shacl:prefix>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <shacl:namespace>http://purl.org/dc/elements/1.1/</shacl:namespace>
+        <shacl:prefix>dc</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <shacl:namespace>http://creativecommons.org/ns#</shacl:namespace>
+        <shacl:prefix>cc</shacl:prefix>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <shacl:namespace>http://erlangen-crm.org/211015/</shacl:namespace>
+        <shacl:prefix>ecrm</shacl:prefix>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid10">
-        <shacl:namespace>http://www.w3.org/2004/02/skos/core#</shacl:namespace>
-        <shacl:prefix>skos</shacl:prefix>
+        <shacl:namespace>http://www.w3.org/2000/01/rdf-schema#</shacl:namespace>
+        <shacl:prefix>rdfs</shacl:prefix>
     </rdf:Description>
 </rdf:RDF>
 

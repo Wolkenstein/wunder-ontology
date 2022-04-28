@@ -1,21 +1,13 @@
 [ {
   "@id" : "_:genid1",
   "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://www.w3.org/ns/shacl#"
+    "@value" : "http://www.w3.org/2002/07/owl#"
   } ],
   "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "sh"
+    "@value" : "owl"
   } ]
 }, {
   "@id" : "_:genid10",
-  "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://www.w3.org/2004/02/skos/core#"
-  } ],
-  "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "skos"
-  } ]
-}, {
-  "@id" : "_:genid2",
   "http://www.w3.org/ns/shacl#namespace" : [ {
     "@value" : "http://www.w3.org/2000/01/rdf-schema#"
   } ],
@@ -23,39 +15,23 @@
     "@value" : "rdfs"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid2",
   "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://erlangen-crm.org/211015/"
+    "@value" : "http://www.w3.org/ns/shacl#"
   } ],
   "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "ecrm"
+    "@value" : "sh"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://www.w3.org/2004/02/skos/core#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "skos"
   } ]
 }, {
   "@id" : "_:genid4",
-  "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "https://miracle.plus.ac.at/ontology#"
-  } ],
-  "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "miracle"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://creativecommons.org/ns#"
-  } ],
-  "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "cc"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://purl.org/dc/elements/1.1/"
-  } ],
-  "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "dc"
-  } ]
-}, {
-  "@id" : "_:genid7",
   "http://www.w3.org/ns/shacl#namespace" : [ {
     "@value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   } ],
@@ -63,20 +39,44 @@
     "@value" : "rdf"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid5",
   "http://www.w3.org/ns/shacl#namespace" : [ {
-    "@value" : "http://www.w3.org/2002/07/owl#"
+    "@value" : "https://miracle.plus.ac.at/ontology#"
   } ],
   "http://www.w3.org/ns/shacl#prefix" : [ {
-    "@value" : "owl"
+    "@value" : "miracle"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid6",
   "http://www.w3.org/ns/shacl#namespace" : [ {
     "@value" : "http://purl.org/dc/terms/"
   } ],
   "http://www.w3.org/ns/shacl#prefix" : [ {
     "@value" : "dcterms"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://purl.org/dc/elements/1.1/"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "dc"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://creativecommons.org/ns#"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "cc"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/ns/shacl#namespace" : [ {
+    "@value" : "http://erlangen-crm.org/211015/"
+  } ],
+  "http://www.w3.org/ns/shacl#prefix" : [ {
+    "@value" : "ecrm"
   } ]
 }, {
   "@id" : "http://erlangen-crm.org/211015/E10_Transfer_of_Custody",
@@ -182,7 +182,7 @@
     "@value" : "2022-04-28"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2022-04-28+13:37"
+    "@value" : "2022-04-28+13:46"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -548,13 +548,13 @@
     "@value" : "2022-04-28"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2022-04-28+13:37"
+    "@value" : "2022-04-28+13:48"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
+    "@language" : "en",
     "@value" : "Presentation of the votive offering"
   }, {
-    "@language" : "en",
+    "@language" : "de",
     "@value" : "Übergabe der Votivgabe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {

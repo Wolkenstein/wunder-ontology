@@ -93,7 +93,7 @@
                                             rdfs:subClassOf <http://erlangen-crm.org/211015/E39_Actor> ;
                                             <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" ;
                                             <http://purl.org/dc/terms/created> "2022-04-28" ;
-                                            <http://purl.org/dc/terms/modified> "2022-04-28+13:37" ;
+                                            <http://purl.org/dc/terms/modified> "2022-04-28+13:46" ;
                                             rdfs:label "Actor"@en ,
                                                        "Akteur"@de ;
                                             <http://www.w3.org/2004/02/skos/core#definition> "Person, Heilige_r oder Gruppe, die in einem Wunderbericht handelt oder erwähnt wird."@de ,
@@ -247,9 +247,9 @@
                                                                   owl:disjointWith <https://miracle.plus.ac.at/ontology#Vision> ;
                                                                   <http://purl.org/dc/elements/1.1/creator> "Peter Hinkelmanns" ;
                                                                   <http://purl.org/dc/terms/created> "2022-04-28" ;
-                                                                  <http://purl.org/dc/terms/modified> "2022-04-28+13:37" ;
-                                                                  rdfs:label "Presentation of the votive offering"@de ,
-                                                                             "Übergabe der Votivgabe"@en ;
+                                                                  <http://purl.org/dc/terms/modified> "2022-04-28+13:48" ;
+                                                                  rdfs:label "Presentation of the votive offering"@en ,
+                                                                             "Übergabe der Votivgabe"@de ;
                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Presentation of the votive offering as fulfilment of a condition of the vow."@en ,
                                                                                                                    "Übergabe der Votivgabe als Erfüllung einer Bedingung des Gelübdes."@de .
 
@@ -294,35 +294,35 @@
                                                                                 _:genid9 ,
                                                                                 _:genid10 .
 
-_:genid1 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/ns/shacl#" ;
-          <http://www.w3.org/ns/shacl#prefix> "sh" .
-
-_:genid2 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2000/01/rdf-schema#" ;
-          <http://www.w3.org/ns/shacl#prefix> "rdfs" .
-
-_:genid3 <http://www.w3.org/ns/shacl#namespace> "http://erlangen-crm.org/211015/" ;
-          <http://www.w3.org/ns/shacl#prefix> "ecrm" .
-
-_:genid4 <http://www.w3.org/ns/shacl#namespace> "https://miracle.plus.ac.at/ontology#" ;
-          <http://www.w3.org/ns/shacl#prefix> "miracle" .
-
-_:genid5 <http://www.w3.org/ns/shacl#namespace> "http://creativecommons.org/ns#" ;
-          <http://www.w3.org/ns/shacl#prefix> "cc" .
-
-_:genid6 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/elements/1.1/" ;
-          <http://www.w3.org/ns/shacl#prefix> "dc" .
-
-_:genid7 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
-          <http://www.w3.org/ns/shacl#prefix> "rdf" .
-
-_:genid8 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2002/07/owl#" ;
+_:genid1 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2002/07/owl#" ;
           <http://www.w3.org/ns/shacl#prefix> "owl" .
 
-_:genid9 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/terms/" ;
+_:genid2 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/ns/shacl#" ;
+          <http://www.w3.org/ns/shacl#prefix> "sh" .
+
+_:genid3 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2004/02/skos/core#" ;
+          <http://www.w3.org/ns/shacl#prefix> "skos" .
+
+_:genid4 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
+          <http://www.w3.org/ns/shacl#prefix> "rdf" .
+
+_:genid5 <http://www.w3.org/ns/shacl#namespace> "https://miracle.plus.ac.at/ontology#" ;
+          <http://www.w3.org/ns/shacl#prefix> "miracle" .
+
+_:genid6 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/terms/" ;
           <http://www.w3.org/ns/shacl#prefix> "dcterms" .
 
-_:genid10 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2004/02/skos/core#" ;
-           <http://www.w3.org/ns/shacl#prefix> "skos" .
+_:genid7 <http://www.w3.org/ns/shacl#namespace> "http://purl.org/dc/elements/1.1/" ;
+          <http://www.w3.org/ns/shacl#prefix> "dc" .
+
+_:genid8 <http://www.w3.org/ns/shacl#namespace> "http://creativecommons.org/ns#" ;
+          <http://www.w3.org/ns/shacl#prefix> "cc" .
+
+_:genid9 <http://www.w3.org/ns/shacl#namespace> "http://erlangen-crm.org/211015/" ;
+          <http://www.w3.org/ns/shacl#prefix> "ecrm" .
+
+_:genid10 <http://www.w3.org/ns/shacl#namespace> "http://www.w3.org/2000/01/rdf-schema#" ;
+           <http://www.w3.org/ns/shacl#prefix> "rdfs" .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
